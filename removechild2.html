@@ -1,0 +1,34 @@
+<html>
+<head>
+  
+</head>
+<body>
+<ul>
+  <li>Trump</li>
+  <li>Puttin</li>
+  <li>deVos</li>
+  <li>pewdiepie</li>
+</ul>
+<select id="Dennis">
+<option value = "0">Trump</option>
+<option value = "1">Puttin</option>
+<option value = "2">deVos</option>
+<option value = "3">pewdiepie</option>
+</select>
+<button onclick="removeItem()">Who should we remove?</button>
+
+<script>
+function removeItem() {
+  //get value of Dennis ID and save it as Dennis
+  var Dennis = document.getElementById('Dennis').value;
+  //get the list item by the value.
+  var eliminate = document.getElementsByTagName('li')[Dennis];
+  var container = eliminate.parentNode;
+  container.removeChild(eliminate);
+  
+}
+ 
+  
+</script>
+</body>
+</html>
